@@ -25,7 +25,7 @@ if __name__ == "__main__":
     #General page configuration
     st.set_page_config(layout="wide")
     state = st.session_state
-    img = "/Users/andreadesogus/Desktop/script/webapp/jurix_logo_resc.png"
+    img = "https://raw.githubusercontent.com/Frisk-12/Jurix/main/jurix_logo_resc.png"
     login = Login(state,img,LibraryManager(state),Telemetria)
     #Authentication Section
     if not login.check_user_login():
