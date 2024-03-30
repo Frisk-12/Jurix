@@ -109,7 +109,6 @@ semver==2.13.0
 sentence-transformers==2.2.2
 sentencepiece==0.1.97
 st-annotated-text==4.0.1
-st-gsheets-connection==0.0.3
 starlette==0.25.0
 streamlit==1.29.0
 streamlit-camera-input-live==0.2.0
