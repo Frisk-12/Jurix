@@ -6,16 +6,24 @@ Created on Sat Mar 30 15:51:14 2024
 @author: andreadesogus
 """
     
-import json
+import streamlit as st
 
 class APIKeys:
-    def __init__(self, config_file='/Users/andreadesogus/Desktop/jurix/production/config.json'):
-        self.config_file = config_file
+    def __init__(self):
+        pass
 
     def load_keys(self):
-        with open(self.config_file) as f:
-            config = json.load(f)
-        return config
+        keys = {
+            'pinecone_key': st.secrets["pinecone_key"],
+            'aws_access_key_id': st.secrets["aws_access_key_id"],
+            'aws_secret_access_key': st.secrets["aws_secret_access_key"],
+            'region_name': st.secrets["region_name"],
+            'azure_api_key': st.secrets["azure_api_key"],
+            'azure_api_version': st.secrets["azure_api_version"],
+            'azure_endpoint': st.secrets["azure_endpoint"],
+            'openai_api_key': st.secrets["openai_api_key"]
+        }
+        return keys
 
     def pinecone_key(self):
         keys = self.load_keys()
