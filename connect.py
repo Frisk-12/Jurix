@@ -6,7 +6,7 @@ Created on Sat Mar 30 15:51:14 2024
 @author: andreadesogus
 """
     
-mport streamlit as st
+import streamlit as st
 
 class APIKeys:
     def __init__(self):
