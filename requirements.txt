@@ -170,7 +170,6 @@ pyarrow==11.0.0
 pybind11==2.11.1
 pycosat==0.6.3
 pycryptodomex==3.17
-pycurl==7.45.1
 pydantic==1.10.8
 pydantic_core==2.6.3
 pydeck==0.8.0
@@ -179,7 +178,6 @@ pyee==8.2.2
 Pygments==2.14.0
 pyinstaller==5.7.0
 pyinstaller-hooks-contrib==2022.14
-pyls-spyder==0.4.0
 pymdown-extensions==10.7
 Pympler==1.0.1
 PyMuPDF==1.21.1
