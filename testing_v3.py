@@ -40,7 +40,7 @@ if __name__ == "__main__":
             streamResponse  = StreamResponse(state, LibraryManager(state))
             search = Search(state, LibraryManager(state), streamResponse, Telemetria)
             res = search.doSearch()
-            st.write(state)
+            #st.write(state)
 
         with t2:
             # work = Work(state)
