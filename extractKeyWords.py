@@ -7,6 +7,7 @@ Created on Wed Jan  3 11:51:33 2024
 """
 
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import SnowballStemmer
