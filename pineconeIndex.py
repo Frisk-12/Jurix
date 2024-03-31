@@ -7,7 +7,6 @@ Created on Sat Jan  6 12:33:27 2024
 """
 
 import os
-import pinecone
 from pinecone import Pinecone
 from pinecone.core.client.model.query_response import QueryResponse
 from typing import Optional, Dict, Any, Union, List,Tuple, Callable
