@@ -24,7 +24,7 @@ if __name__ == "__main__":
     #General page configuration
     st.set_page_config(layout="wide")
     state = st.session_state
-    img = "https://imgur.com/7Kfx7gv"
+    img = "https://i.imgur.com/7Kfx7gv.png"
     login = Login(state,img,LibraryManager(state),Telemetria)
     #Authentication Section
     if not login.check_user_login():
