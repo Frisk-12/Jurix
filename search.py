@@ -167,7 +167,7 @@ class Search:
                             with tab4:
                                 subtabs = st.columns([0.9,0.1])
                                 with subtabs[0]:
-                                    question = st.text_input("Chiedi a Jurix qualsiasi cosa:", key="Q_"+result.id, placeholder=f"{}Scrivi qui")
+                                    question = st.text_input("Chiedi a Jurix qualsiasi cosa:", key="Q_"+result.id, placeholder=f"Scrivi qui")
                                 with subtabs[1]:
                                     st.write("")
                                     st.write("")
