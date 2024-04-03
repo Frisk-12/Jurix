@@ -175,7 +175,7 @@ class Search:
                                     c = st.button("Vai", key="Qc_"+result.id, )
                                 del self.state["Q_"+result.id]
                                 del self.state["Qc_"+result.id]
-                                if c:
+                                if c or question:
                                     system   = f"""Immagina di essere un consulente specializzato in diritto tributario. Immagina che puoi usufruire di un database composto da svariate sentenze, ordinanze, interpelli e documenti legali relativi al ramo tributario. 
 
 Un utente ha una domanda da porti e sulla base del contenuto di uno dei testi presenti nel database tu hai l'opportunità di aiutare l'utente rispondendo alla sua domanda.
