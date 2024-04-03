@@ -59,19 +59,19 @@ if __name__ == "__main__":
             res = search.doSearch()
             #st.write(state)
 
-        with t2:
-            # work = Work(state)
-            # work.doWork()
-            a,b,c = st.columns([0.15,0.6,0.15])
-            with b:
-                st.info(f"🚧 Sarà presto disponibile la funzionalità rivolta ai professionisti per rispondere a domande complesse e preparare una bozza di parere. Stay tuned! 💥")
+        #with t2:
+        #    # work = Work(state)
+        #    # work.doWork()
+        #    a,b,c = st.columns([0.15,0.6,0.15])
+        #    with b:
+        #        st.info(f"🚧 Sarà presto disponibile la funzionalità rivolta ai professionisti per rispondere a domande complesse e preparare una bozza di parere. Stay tuned! 💥")
             
-        with t3:
-            # upload = Upload(state)
-            # upload.doUpload()
-            a,b,c = st.columns([0.15,0.6,0.15])
-            with b:
-                st.info("🚧 Sarà presto disponibile la funzionalità per caricare propri documenti personali e interrogarli tenendo in considerazione anche la banca dati di Jurix. Stay tuned! 💥")
+       # with t3:
+       #     # upload = Upload(state)
+       #     # upload.doUpload()
+       #     a,b,c = st.columns([0.15,0.6,0.15])
+       #     with b:
+       #         st.info("🚧 Sarà presto disponibile la funzionalità per caricare propri documenti personali e interrogarli tenendo in considerazione anche la banca dati di Jurix. Stay tuned! 💥")
 
         
     
