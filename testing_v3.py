@@ -50,9 +50,10 @@ if __name__ == "__main__":
     if state.authenticated:
         startSession = StartSession(state, img)
         
-        list_tabs, whitespace, css = startSession.tabsHandler()
-        t1,t2,t3 = st.tabs([s.center(whitespace,"\u2001") for s in list_tabs])
-        st.markdown(css, unsafe_allow_html=True)
+        #list_tabs, whitespace, css = startSession.tabsHandler()
+        #t1,t2,t3 = st.tabs([s.center(whitespace,"\u2001") for s in list_tabs])
+        #st.markdown(css, unsafe_allow_html=True)
+        t1 = st.tabs(["Ricerca"])
         with t1:
             streamResponse  = StreamResponse(state, LibraryManager(state))
             search = Search(state, LibraryManager(state), streamResponse, Telemetria)
