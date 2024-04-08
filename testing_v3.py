@@ -23,24 +23,20 @@ from work import Work
 if __name__ == "__main__":
     #General page configuration
     st.set_page_config(layout="wide")
-    st.markdown(
-        """
-        <style>
-        body {
-            background-color: #FFFFFF; /* Colore di sfondo */
-            color: #31333F; /* Colore del testo */
-        }
-        .stApp {
-            background-color: #FFFFFF; /* Colore di sfondo */
-        }
-        .st-bw {
-            color: #31333F; /* Colore del testo */
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
     state = st.session_state
+    state.primaryColor = "#324356"
+    state.backgroundColor = "#FFFFFF"
+    state.secondaryBackgroundColor = "#EFEFEF"
+    state.textColor = "#31333F"
+    state.font = "Serif"
+    st.config.set_option("theme.primaryColor", state.primaryColor)
+    st.config.set_option("theme.backgroundColor", state.backgroundColor)
+    st.config.set_option(
+        "theme.secondaryBackgroundColor", state.secondaryBackgroundColor
+    )
+    st.config.set_option("theme.textColor", state.textColor)
+    st.config.set_option("theme.font", state.font)
+
     img = "https://i.imgur.com/7Kfx7gv.png"
     login = Login(state,img,LibraryManager(state),Telemetria)
     #Authentication Section
