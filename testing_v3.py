@@ -28,7 +28,7 @@ if __name__ == "__main__":
     state.backgroundColor = "#FFFFFF"
     state.secondaryBackgroundColor = "#EFEFEF"
     state.textColor = "#31333F"
-    state.font = "Serif"
+    state.font = "serif"
     st.config.set_option("theme.primaryColor", state.primaryColor)
     st.config.set_option("theme.backgroundColor", state.backgroundColor)
     st.config.set_option(
