@@ -62,4 +62,4 @@ class KeyWordsExtractor:
         except Exception as e:
             # In caso di errore, stampa il messaggio di errore e gestiscilo opportunamente
             print(f"An error occurred: {str(e)}")
-            return []  # Ritorna una lista vuota se si verifica un errore
+            return "IRPEF"  # Ritorna una lista vuota se si verifica un errore
