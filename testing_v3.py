@@ -47,7 +47,7 @@ if __name__ == "__main__":
         startSession = StartSession(state, img)
         
         list_tabs, whitespace, css = startSession.tabsHandler()
-        st.info("Ti preghiamo di considerare che si tratta di una demo gratuita che consiste di un dataset di prassi e giurisprudenza tributaria aggiornato a Novembre 2023.")
+        st.info("Scopri il potenziale della nostra esclusiva demo, completamente gratuita! Esplora un ricco dataset di prassi e giurisprudenza tributaria aggiornato fino a novembre 2023.")
         #t1,t2,t3 = st.tabs([s.center(whitespace,"\u2001") for s in list_tabs])
         #st.markdown(css, unsafe_allow_html=True)
         #t1 = st.tabs(["Ricerca"])
