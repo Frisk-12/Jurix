@@ -89,20 +89,20 @@ class Login:
                             # Display sign-up form
                             st.info("Registrarsi è semplice e veloce. Rispondi giusto a qualche domanda per conoscerci meglio:")
                             with st.form("registration", border=False):
-                                self.state.username = st.text_input("Conferma la tua username:", placeholder="Username")
+                                self.state.username = st.text_input("Conferma la tua username:*", placeholder="Username")
                                 st.write("---")
-                                professione = st.radio("Chi sei?", ['Professionista legale', 'Studente', 'Docente', 'Utente comune'], index=None, key="professione")
+                                professione = st.radio("Chi sei?*", ['Professionista legale', 'Studente', 'Docente', 'Utente comune'], index=None, key="professione")
                                 st.write("---")
-                                age = st.radio("A quale classe d'età appartieni?", ['18-24', '25-34', '35-44', '45-54', '55-64', 'Over 65'], index=None, key="age")
+                                age = st.radio("A quale classe d'età appartieni?*", ['18-24', '25-34', '35-44', '45-54', '55-64', 'Over 65'], index=None, key="age")
                                 st.write("---")
                                 italian_regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana", "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"]
-                                regione = st.selectbox("Regione di residenza:", italian_regions, index=None, placeholder="Scegli la tua regione", key="regione")
+                                regione = st.selectbox("Regione di residenza:*", italian_regions, index=None, placeholder="Scegli la tua regione", key="regione")
                                 st.write("---")
                                 email = st.text_input("Scrivi il tuo indirizzo email:", placeholder="Scrivi la tua email", key="email")
                                 st.write("---")
-                                source = st.radio("Come sei arrivato qui?", ['Linkedin', 'Sito web', 'Passaporola', 'Google'], index=None, key="source")
+                                source = st.radio("Come sei arrivato qui?*", ['Linkedin', 'Sito web', 'Passaporola', 'Google'], index=None, key="source")
                                 st.write("---")
-                                condizioni_marketing = st.checkbox("Acconsento a ricevere comunicazioni di marketing tramite email.", key="condizioni_marketing" ,help = "Accettando, autorizzo l'invio di comunicazioni promozionali, newsletter e offerte speciali relative ai prodotti e ai servizi offerti da [Nome della tua azienda]. Comprendo che posso revocare il consenso in qualsiasi momento tramite l'opzione di annullamento dell'iscrizione presente in ogni email inviata, oppure contattando il servizio clienti di [Nome della tua azienda]. I miei dati personali saranno trattati in conformità alla politica sulla privacy di [Nome della tua azienda].")
+                                condizioni_marketing = st.checkbox("Acconsento a ricevere comunicazioni di marketing tramite email.*", key="condizioni_marketing" ,help = "Accettando, autorizzo l'invio di comunicazioni promozionali, newsletter e offerte speciali relative ai prodotti e ai servizi offerti da [Nome della tua azienda]. Comprendo che posso revocare il consenso in qualsiasi momento tramite l'opzione di annullamento dell'iscrizione presente in ogni email inviata, oppure contattando il servizio clienti di [Nome della tua azienda]. I miei dati personali saranno trattati in conformità alla politica sulla privacy di [Nome della tua azienda].")
                                 cu = """
                                 Accettando, confermo di aver letto e compreso i Termini di Utilizzo di questo servizio. Comprendo che il database del sistema è stato aggiornato l'ultima volta a novembre 2023 e che il prodotto è attualmente in fase alpha, pertanto è offerto gratuitamente. Tuttavia, mi rendo conto che in futuro potrebbe essere introdotta una conversione in un modello a pagamento, come un abbonamento.
         
