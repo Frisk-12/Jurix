@@ -89,6 +89,8 @@ class Login:
                             # Display sign-up form
                             st.info("Registrarsi è semplice e veloce. Rispondi giusto a qualche domanda per conoscerci meglio:")
                             with st.form("registration", border=False):
+                                self.state.username = st.text_input("Conferma la tua username:", placeholder="Username")
+                                st.write("---")
                                 professione = st.radio("Chi sei?", ['Professionista legale', 'Studente', 'Docente', 'Utente comune'], index=None, key="professione")
                                 st.write("---")
                                 age = st.radio("A quale classe d'età appartieni?", ['18-24', '25-34', '35-44', '45-54', '55-64', 'Over 65'], index=None, key="age")
