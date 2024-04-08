@@ -47,7 +47,14 @@ if __name__ == "__main__":
         startSession = StartSession(state, img)
         
         list_tabs, whitespace, css = startSession.tabsHandler()
-        st.info("Scopri il potenziale della nostra esclusiva demo, completamente gratuita! Esplora un ricco dataset di prassi e giurisprudenza tributaria aggiornato fino a novembre 2023.")
+        #st.info("")
+        testo = """
+        <div style="text-align: justify;">
+            Scopri il potenziale della nostra esclusiva demo, completamente gratuita! Esplora un ricco dataset di prassi e giurisprudenza tributaria aggiornato fino a novembre 2023.
+        </div>
+        """
+        # Mostra il widget info con il testo giustificato
+        st.info(testo, unsafe_allow_html=True)
         #t1,t2,t3 = st.tabs([s.center(whitespace,"\u2001") for s in list_tabs])
         #st.markdown(css, unsafe_allow_html=True)
         #t1 = st.tabs(["Ricerca"])
