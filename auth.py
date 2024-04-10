@@ -93,13 +93,13 @@ class Login:
                                 st.write("---")
                                 professione = st.radio("Chi sei?*", ['Professionista legale', 'Studente', 'Docente', 'Utente comune'], index=None, key="professione")
                                 st.write("---")
-                                age = st.radio("A quale classe d'età appartieni?*", ['18-24', '25-34', '35-44', '45-54', '55-64', 'Over 65'], index=None, key="age")
-                                st.write("---")
-                                italian_regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana", "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"]
-                                regione = st.selectbox("Regione di residenza:*", italian_regions, index=None, placeholder="Scegli la tua regione", key="regione")
-                                st.write("---")
-                                email = st.text_input("Scrivi il tuo indirizzo email:", placeholder="Scrivi la tua email", key="email")
-                                st.write("---")
+                                #age = st.radio("A quale classe d'età appartieni?*", ['18-24', '25-34', '35-44', '45-54', '55-64', 'Over 65'], index=None, key="age")
+                                #st.write("---")
+                                #italian_regions = ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana", "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"]
+                                #regione = st.selectbox("Regione di residenza:*", italian_regions, index=None, placeholder="Scegli la tua regione", key="regione")
+                                #st.write("---")
+                                #email = st.text_input("Scrivi il tuo indirizzo email:", placeholder="Scrivi la tua email", key="email")
+                                #st.write("---")
                                 source = st.radio("Come sei arrivato qui?*", ['Linkedin', 'Sito web', 'Passaporola', 'Google'], index=None, key="source")
                                 st.write("---")
                                 condizioni_marketing = st.checkbox("Acconsento a ricevere comunicazioni di marketing tramite email.", key="condizioni_marketing" ,help = "Accettando, autorizzo l'invio di comunicazioni promozionali, newsletter e offerte speciali relative ai prodotti e ai servizi offerti da AnyVentures. Comprendo che posso revocare il consenso in qualsiasi momento tramite l'opzione di annullamento dell'iscrizione presente in ogni email inviata, oppure contattando il servizio clienti di AnyVentures. I miei dati personali saranno trattati in conformità alla politica sulla privacy di AnyVentures.")
@@ -117,7 +117,7 @@ class Login:
                                     st.warning("Fornisci le informazioni richieste contrassegnate con asterischi (*) prima di procedere.")
 
                         try:    
-                            if self.state.professione and self.state.age and self.state.condizioni_utilizzo and self.state.regione and self.state.source:
+                            if self.state.professione and self.state.condizioni_utilizzo and self.state.source:
                                 new_user = {
                                     "username": self.state.username,
                                     "profile": {
