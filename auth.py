@@ -122,20 +122,20 @@ class Login:
                                     "username": self.state.username,
                                     "profile": {
                                         "professione": self.state.professione,
-                                        "age": self.state.age,
-                                        "regione": self.state.regione,
+                                       #"age": self.state.age,
+                                       #"regione": self.state.regione,
                                         "condizioni_utilizzo": self.state.condizioni_utilizzo,
                                         "source": self.state.source
                                     }
                                 }
-                                if self.state.email:
-                                    new_user['profile']['email'] = self.state.email
-                                if self.state.condizioni_marketing:
-                                    new_user['profile']['condizioni_marketing'] = self.state.condizioni_marketing
+                                #if self.state.email:
+                                    #new_user['profile']['email'] = self.state.email
+                                #if self.state.condizioni_marketing:
+                                    #new_user['profile']['condizioni_marketing'] = self.state.condizioni_marketing
                                 # Insert new user into the database
                                 self.ddbs.insert_item(new_user)
                                 # Clear form and state variables
-                                del self.state.Signup, self.state.professione, self.state.age, self.state["FormSubmitter:registration-Sign up!"], self.state.email, self.state.regione, self.state.source, self.state.condizioni_marketing, self.state.condizioni_utilizzo
+                                del self.state.Signup, self.state.professione, self.state["FormSubmitter:registration-Sign up!"], self.state.source, self.state.condizioni_utilizzo
                                 st.info("Please reload the page!")
                         except:
                             st.write("")
