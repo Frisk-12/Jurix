@@ -137,5 +137,5 @@ class Login:
                                 # Clear form and state variables
                                 del self.state.Signup, self.state.professione, self.state["FormSubmitter:registration-Sign up!"], self.state.source, self.state.condizioni_utilizzo
                                 st.info("Please reload the page!")
-                        except Exception as e:
-                            st.write(e)
+                        except:# Exception as e:
+                            st.write("")
