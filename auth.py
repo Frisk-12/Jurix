@@ -138,4 +138,4 @@ class Login:
                                 del self.state.Signup, self.state.professione, self.state["FormSubmitter:registration-Sign up!"], self.state.source, self.state.condizioni_utilizzo
                                 st.info("Please reload the page!")
                         except:
-                            st.write("")
+                            st.write("C'è un problema")
